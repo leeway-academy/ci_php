@@ -7,7 +7,7 @@ This library is a porting of https://github.com/picandocodigo/ci_js for PHP
 
 ### Install it via composer:
 
-```composer require leewayweb/ci_php:*```
+```composer require leewayweb/ci_php```
 
 ### Include it in your project
 
