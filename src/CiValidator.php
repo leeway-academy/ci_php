@@ -12,15 +12,11 @@ class CiValidator
      */
     public function validate_ci( string $ci ) : bool
     {
-//        ci = clean_ci(ci);
-//        var dig = ci[ci.length - 1];
-//        ci = ci.replace(/[0-9]$/, '');
-//        return (dig == validation_digit(ci));
-
         $ci = $this->clean_ci($ci);
-        $dig = preg_replace('/[0-9]$/', '', $ci );
+        $validationDigit = $ci[-1];
+        $ci = preg_replace('/[0-9]$/', '', $ci );
 
-        return $dig == $this->validation_digit( $ci );
+        return $validationDigit == $this->validation_digit( $ci );
     }
 
     /**
@@ -29,8 +25,6 @@ class CiValidator
      */
     public function clean_ci( string $ci ) : string
     {
-        // ci.replace(/\D/g, '');
-
         return preg_replace( '/\D/', '', $ci );
     }
 
