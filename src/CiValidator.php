@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Leeway\CiValidator;
+namespace Leewayweb\CiValidator;
 
 class CiValidator
 {

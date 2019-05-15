@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
-use Leeway\CiValidator\CiValidator;
+use Leewayweb\CiValidator\CiValidator;
 
 $validator = new CiValidator();
 

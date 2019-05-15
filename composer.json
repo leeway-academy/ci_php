@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Leeway\\CiValidator\\" : "src"
+      "Leewayweb\\CiValidator\\" : "src"
     }
   }
 }
