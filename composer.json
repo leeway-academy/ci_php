@@ -1,8 +1,10 @@
 {
-  "name": "leeway/ci_php",
+  "name": "leewayweb/ci_php",
   "description": "Uruguayan ID validator. Based on https://github.com/picandocodigo/ci_js",
   "minimum-stability": "stable",
   "license": "GPL-3.0-or-later",
+  "keywords" : [ "validation", "uruguay" ],
+  "homepage" : "https://github.com/leeway-academy/ci_php",
   "authors": [
     {
       "name": "Mauro Chojrin",
