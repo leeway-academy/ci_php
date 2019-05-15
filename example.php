@@ -6,7 +6,7 @@ use Leewayweb\CiValidator\CiValidator;
 
 $validator = new CiValidator();
 
-$ci = "1.111.111";
+$ci = $argv[1];
 
 echo "Validation digit for '$ci': ".$validator->validation_digit( $ci ).PHP_EOL;
 echo "Validation for '$ci': ".($validator->validate_ci( $ci ) ? 'true' : 'false').PHP_EOL;
