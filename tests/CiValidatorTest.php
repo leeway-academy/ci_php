@@ -62,4 +62,18 @@ class CiValidatorTest extends TestCase
             $this->assertEquals( true, $sut->validate_ci( $sut->random_ci() ) );
         }
     }
+
+    public function testValidate_ciWillReturnFalseWithEmptyString() {
+        $sut = new CiValidator();
+
+        $this->assertEquals(false, $sut->validate_ci(""));
+    }
+
+    public function testValidate_willReturnFalseWithStringOfBlankSpaces() {
+        $sut = new CiValidator();
+
+        $this->assertEquals(false, $sut->validate_ci("    "));
+    }
+
+
 }
