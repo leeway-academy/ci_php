@@ -12,6 +12,10 @@ class CiValidator
      */
     public function validate_ci( string $ci ) : bool
     {
+        if (empty(trim($ci))) {
+            return false;
+        }
+
         $ci = $this->clean_ci($ci);
         $validationDigit = $ci[-1];
         $ci = preg_replace('/[0-9]$/', '', $ci );
